@@ -20,4 +20,4 @@ client.on("message", async(message) => {
     }
 })
 
-client.login("your-token").catch(e => console.log("INVALID TOKEN"))
+client.login(process.env.TOKEN).catch(e => console.log("INVALID TOKEN"))
