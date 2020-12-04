@@ -2,12 +2,12 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 
 client.on("ready", () => {
-    console.log(`Started! ID: {781111724270419968}\nTAG: {`Mr.Blober#9486`}
+    console.log(`Ready!`}
                                             
 })
 
 client.on("message", async(message) => {
-    const prefix = "+";
+    const prefix = "your prefix";
 
     if (message.author.bot) return;
     if (!message.guild) return;
@@ -20,4 +20,4 @@ client.on("message", async(message) => {
     }
 })
 
-client.login("NzgxMTExNzI0MjcwNDE5OTY4.X744-w.K3Y2YOR8hRh-vbxxJCStUESgZqk").catch(e => console.log("INVALID TOKEN"))
+client.login("your-token").catch(e => console.log("INVALID TOKEN"))
